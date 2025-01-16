@@ -1,14 +1,46 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
-import { sideBarMenu, socialIcons } from "../../data/data";
-import "./sidebar.scss";
-import icon from "../../assets/icon.svg";
-const Sidebar = () => {
+import React, { useReducer } from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { sideBarMenu, socialIcons } from '../../data/data'
+
+import { BsXLg, BsListNested } from 'react-icons/bs'
+import { reducer } from '../../hooks/useReducer'
+import './sidebar.scss'
+
+const defaultOptions = {
+  showAside1: false,
+  openCloseNav1: false,
+}
+
+const Sidebar = React.memo(() => {
+  // dispatch reducer functionality
+  const [state, dispatch] = useReducer(reducer, defaultOptions)
   return (
-    <aside className="aside">
-      <div className="aside-wrapper">
-        <Link to={"/"} className="logo-section">
-          <svg
+    <>
+      <BsListNested
+        onClick={() => dispatch({ type: 'OPEN_NAVBAR' })}
+        className="menu-icon switch__color"
+      />
+      <aside
+        className={`${state.openCloseNav1 ? 'aside open-sidebar' : 'aside'} ${
+          state.showAside1 ? 'aside show-asideBar' : 'aside'
+        }`}
+      >
+        <div className="aside-wrapper">
+          <BsXLg
+            onClick={() => dispatch({ type: 'CLOSE_NAVBAR' })}
+            className="close-btn switch__color"
+          />
+          <Link
+            className="logo-section"
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              lineHeight: '4',
+            }}
+            to="/"
+          >
+            <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 240 240"
             className="sidebar__logo"
@@ -30,41 +62,43 @@ const Sidebar = () => {
               fill="none"
             />
           </svg>
-
-          <span className="switch__color">Tanesh</span>
-        </Link>
-        <ul className="side-link">
-          {" "}
-          {sideBarMenu.map((link, index) => {
-            const { text, url, icon } = link;
-            return (
-              <li key={index}>
-                <NavLink
-                  to={url}
-                  className={({ isActive }) => {
-                    return isActive ? "nav_links active_links" : "nav_links";
-                  }}
-                >
+            <span className="switch__color" style={{ fontSize: '1.2rem' }}>
+             Tanesh
+            </span>
+          </Link>
+          <ul className="side-link">
+            {sideBarMenu.map((link, index) => {
+              const { text, icon, url } = link
+              return (
+                <li key={index}>
+                  <NavLink
+                    onClick={() => dispatch({ type: 'CLOSE_NAVBAR' })}
+                    className={({ isActive }) => {
+                      return isActive ? 'nav__links active-links' : 'nav__links'
+                    }}
+                    to={url}
+                  >
+                    {icon}
+                    {text}
+                  </NavLink>
+                </li>
+              )
+            })}
+          </ul>
+          <div className="social-icon">
+            {socialIcons.map((icons, index) => {
+              const { icon, url } = icons
+              return (
+                <a href={url} key={index}>
                   {icon}
-                  {text}
-                </NavLink>
-              </li>
-            );
-          })}
-        </ul>
-        <div className="social-icon">
-          {socialIcons.map((icons, index) => {
-            const { icon, url } = icons;
-            return (
-              <a key={index} href={url}>
-                {icon}
-              </a>
-            );
-          })}
+                </a>
+              )
+            })}
+          </div>
         </div>
-      </div>
-    </aside>
-  );
-};
+      </aside>
+    </>
+  )
+})
 
-export default Sidebar;
+export default Sidebar

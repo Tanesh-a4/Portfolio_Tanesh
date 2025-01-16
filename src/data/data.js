@@ -10,6 +10,7 @@ import {
   BsGithub,
   BsGoogle,
 } from 'react-icons/bs'
+import { SiDjango } from 'react-icons/si';
 
 import { RiContactsLine, RiReactjsLine } from 'react-icons/ri'
 import {
@@ -68,6 +69,17 @@ const socialIcons = [
 // skills card
 const skillSet = [
   {
+    icon: <RiReactjsLine className="skills-icon switch__color" />,
+    spanText: 'REACT JS',
+    url:
+      'https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started',
+  },
+  {
+    icon: <SiDjango className="skills-icon switch__color" />, // Django Icon
+    spanText: 'Django',
+    url: 'https://www.djangoproject.com/start/', // Django Documentation Link
+  },
+  {
     icon: <AiFillHtml5 className="skills-icon switch__color" />,
     spanText: 'HTML',
     url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
@@ -82,21 +94,11 @@ const skillSet = [
     spanText: 'JAVASCRIPT',
     url: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript',
   },
-  {
-    icon: <SiSass className="skills-icon switch__color" />,
-    spanText: 'SASS',
-    url: '',
-  },
+
 
   {
     icon: <BsBootstrapFill className="skills-icon switch__color" />,
     spanText: 'BOOTSTRAP',
-    url: '',
-  },
-
-  {
-    icon: <SiJquery className="skills-icon switch__color" />,
-    spanText: 'JQUERY',
     url: '',
   },
   {
@@ -111,12 +113,7 @@ const skillSet = [
     url:
       'https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub',
   },
-  {
-    icon: <RiReactjsLine className="skills-icon switch__color" />,
-    spanText: 'REACT JS',
-    url:
-      'https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started',
-  },
+  
 
   {
     icon: <FaNodeJs className="skills-icon switch__color" />,
@@ -141,11 +138,7 @@ const skillSet = [
     spanText: 'Redux',
     url: 'https://redux.js.org/introduction/getting-started',
   },
-  {
-    icon: <FiFigma className="skills-icon switch__color" />,
-    spanText: 'Figma',
-    url: 'https://figma.com',
-  },
+  
   {
     icon: <BsGoogle className="skills-icon switch__color" />,
     spanText: 'Googling',

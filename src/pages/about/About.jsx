@@ -33,6 +33,9 @@ const About = () => {
                   'u',
                   't',
                   '',
+                  'M',
+                  'e',
+                  ' ',
                   '&',
                   '',
                   'S',
@@ -47,27 +50,17 @@ const About = () => {
             </h2>
             <Fade bottom>
               <p>
-                I’m an ambitious Front-End Developer who's passionate about
-                coding and looking for a role in the established IT company with
-                the opportunity to work with the latest technologies on
-                challenging and diverse projects.
+              Hi, I'm an ambitious Full Stack Developer with a passion for coding. I'm eager to join an established IT company where I can work with the latest technologies on challenging and diverse projects.
               </p>
             </Fade>
             <Fade bottom>
               <p>
-                I’m from Ivory Coast but currently living in Nigeria. I’m a
-                freelancer who loves building cool UI effects, dynamic webpages
-                with amazing animations and creating intuitive, dynamic user
-                experiences. I also love to reach out to new opportunities
-                accross the globe that will enhance my skills and get the
-                opporutinity to work with other programmers as well
+              . I specialize in building captivating UI effects, dynamic web pages with stunning animations, and creating intuitive, dynamic user experiences. I'm always open to new opportunities worldwide that will help me enhance my skills and collaborate with other programmers.
               </p>
             </Fade>
             <Fade bottom>
               <p>
-                If I could say one of the most interesting things about me, it's
-                the fact that I'm always ready for any challenges that comes to
-                my way. Here's my CV below for more details.
+              One of the most exciting things about me is my readiness to tackle challenges head-on. You can find more details about my background and experience in my CV here.
               </p>
             </Fade>
             <Fade left>
