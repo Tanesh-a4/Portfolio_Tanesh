@@ -1,74 +1,70 @@
-import React from 'react'
-import { Link,NavLink } from "react-router-dom"; 
-import {sideBarMenu,socialIcons} from "../../data/data"
-import "./sidebar.scss"
-import icon from '../../assets/icon.svg'
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
+import { sideBarMenu, socialIcons } from "../../data/data";
+import "./sidebar.scss";
+import icon from "../../assets/icon.svg";
 const Sidebar = () => {
   return (
-   <aside className='aside'>
-    <div className="aside-wrapper">
-        <Link to={"/"} className='logo-section'>
-        <svg
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 240 240"
-    className="sidebar__logo"
->
+    <aside className="aside">
+      <div className="aside-wrapper">
+        <Link to={"/"} className="logo-section">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 240 240"
+            className="sidebar__logo"
+          >
+            <path
+              className="fill__color"
+              d="M 14.426 77.326 C 54.426 24.718 179.602 36.68 219.602 71.752 C 206.268 95.134 188.509 98.589 155.176 86.899 C 121.842 75.209 74.129 82.511 20.796 100.047 L 14.426 77.326 Z"
+            />
 
-    <path
-        className="fill__color"
-        d="M20 80 C60 30, 180 30, 220 80 Q200 110, 150 90 Q100 70, 20 100 Z"
-    />
-    
+            <path
+              className="fill__color"
+              d="M 137.122 97.168 C 126.317 125.266 108.226 137.882 109.116 156.098 C 109.424 162.403 113.445 169.776 119.494 178.296 C 122.379 182.36 123.574 186.378 129.073 191.24 C 148.908 208.776 128.825 235.326 102.213 230.62 C 88.88 213.953 66.758 184.574 70.091 151.24 C 70.315 130.338 83.292 90.128 99.611 88.782 C 127.878 86.45 144.753 97.451 137.122 97.168 Z"
+            />
 
-    <path
-        className="fill__color"
-        d="M120 90 C110 130, 140 160, 140 200 Q140 230, 100 230 Q90 200, 90 160 C90 130, 110 110, 120 90 Z"
-    />
-    
+            <path
+              d="M 15.619 75.221 C 40.539 34.186 169.528 30.627 219.601 72.434 C 206.268 99.101 185.323 93.423 151.99 80.09 C 118.657 66.757 74.129 78.452 20.796 98.452 M 140.306 95.175 C 95.898 171.874 102.637 151.652 131.86 193.628 C 148.558 217.613 131.268 230.767 104.601 227.434 C 91.268 210.767 64.767 184.174 68.1 150.84 C 68.1 120.84 103.015 78.548 89.738 98.758"
+              stroke="black"
+              stroke-width="5"
+              fill="none"
+            />
+          </svg>
 
-    <path
-        d="M20 80 C60 30, 180 30, 220 80 Q200 110, 150 90 Q100 70, 20 100 M120 90 C110 130, 140 160, 140 200 Q140 230, 100 230 Q90 200, 90 160 C90 130, 110 110, 120 90"
-        stroke="black"
-        stroke-width="5"
-        fill="none"
-    />
-</svg>
-
-
-
-
-
-        <span className='switch__color'>Tanesh</span>
+          <span className="switch__color">Tanesh</span>
         </Link>
-     <ul className="side-link"> {sideBarMenu.map((link,index) => 
-        {
-            const {text,url,icon} =link
+        <ul className="side-link">
+          {" "}
+          {sideBarMenu.map((link, index) => {
+            const { text, url, icon } = link;
             return (
-                <li key={index}>
-                    <NavLink to={url} className={({isActive})=>
-                    {
-                        return isActive ? 'nav_links active_links' : 'nav_links'
-                    }} >
-                        {icon}
-                        {text}
-                    </NavLink>
-                </li>
-            )
-            
-        })}
+              <li key={index}>
+                <NavLink
+                  to={url}
+                  className={({ isActive }) => {
+                    return isActive ? "nav_links active_links" : "nav_links";
+                  }}
+                >
+                  {icon}
+                  {text}
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
         <div className="social-icon">
-            {socialIcons.map((icons,index)=>{
-                const {icon,url } = icons
-                return(
-                    <a key={index} href={url} >
-                        {icon }
-                    </a>)
-            })}
+          {socialIcons.map((icons, index) => {
+            const { icon, url } = icons;
+            return (
+              <a key={index} href={url}>
+                {icon}
+              </a>
+            );
+          })}
         </div>
-    </div>
-   </aside>
-  )
-}
+      </div>
+    </aside>
+  );
+};
 
-export default Sidebar
+export default Sidebar;

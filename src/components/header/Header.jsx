@@ -2,6 +2,7 @@ import React,{useState,useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import './header.scss'
 import Blast from '../BlastAnimation/Blast'
+import Logo from '../logoAnimation/Logo'
 
 const firstletterArray=["T"]
 const nameArray =["n","e","s","h"]
@@ -60,6 +61,7 @@ const Header = () => {
                             <span className="text">Contact me</span>
                             </div>            
                     </Link>
+                    <Logo/>
                 </main>
             </section>
         )
