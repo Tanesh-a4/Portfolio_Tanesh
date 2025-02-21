@@ -1,6 +1,6 @@
 import React from 'react'
 import Fade  from "react-reveal/Fade";
-import Blast from "../BlastAnimation/Blast";
+// import Blast from "../BlastAnimation/Blast";
 
 
 const ProjectPage = () => {
