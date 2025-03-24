@@ -1,5 +1,6 @@
 export { default as wordleClone } from '../assets/images/worlde.png'
-export { default as gpt3 } from '../assets/images/gpt3.png'
-export { default as gericht } from '../assets/images/gericht.png'
+export { default as gpt3 } from '../assets/images/bubbleaura.png'
+export { default as gericht } from '../assets/images/portfolio.png'
 export { default as huddle } from '../assets/images/huddle.png'
 export { default as restCOuntry } from '../assets/images/countryAPI.png'
+export { default as quiklearn } from '../assets/images/quiklearn23png.png'

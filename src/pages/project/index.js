@@ -4,6 +4,7 @@ import { TbWorld } from 'react-icons/tb'
 // images from the asset folder in the image file
 import {
   wordleClone,
+  quiklearn,
   gpt3,
   gericht,
   huddle,
@@ -14,83 +15,83 @@ import {
 export const projects = [
   {
     id: 1,
-    name: 'Wordle Clone',
+    name: 'Quik Learn',
     desc:
-      'A game that gives you 5 attempts to guess the correct word of the day',
-    stack: 'HTML CSS JAVASCRIPT',
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: 'https://github.com/Almarex-Web-Dev/Wordle-clone',
-    },
-    website: {
-      icon: <TbWorld />,
-      url: 'https://worlde-cloned.netlify.app/',
-    },
-    imgUrl: wordleClone,
-  },
-  {
-    id: 2,
-    name: 'Restaurant Website',
-    desc: 'A Responsive restaurant website design with great UI Effect',
+      'A online platform that gives you the ability to learn different subjects',
     stack: 'React JS',
     gitHubUrl: {
       icon: <GrGithub />,
-      url: 'https://github.com/Almarex-Web-Dev/Restaurant-Website-project',
+      url: 'https://github.com/Tanesh-a4/Elearning_22',
     },
     website: {
       icon: <TbWorld />,
-      url: 'https://gericht-restaurant-website.netlify.app/',
+      url: 'https://quiklearn-career.vercel.app/',
+    },
+    imgUrl: quiklearn,
+  },
+  {
+    id: 2,
+    name: 'Portfolio Website',
+    desc: 'A Responsive portfolio website design with great UI Effect',
+    stack: 'React JS',
+    gitHubUrl: {
+      icon: <GrGithub />,
+      url: 'https://github.com/Tanesh-a4/Portfolio_Tanesh',
+    },
+    website: {
+      icon: <TbWorld />,
+      url: 'https://portfolio-tanesh.vercel.app/',
     },
     imgUrl: gericht,
   },
   {
     id: 3,
-    name: 'GPT-3 Project',
-    desc: 'This is an amazing project with cool UI interface',
-    stack: 'React JS',
+    name: 'Bubble Aura ',
+    desc: 'This is an aamazing game that you can play with your friend ',
+    stack: 'HTML CSS JS',
     imgUrl: gpt3,
 
     gitHubUrl: {
       icon: <GrGithub />,
-      url: 'https://github.com/Almarex-Web-Dev/OpenAI-project',
+      url: 'https://github.com/Tanesh-a4/bubbleaure',
     },
     website: {
       icon: <TbWorld />,
-      url: 'https://gpt3-openai-project.netlify.app/',
+      url: 'https://bubbleaure.vercel.app/',
     },
   },
-  {
-    id: 4,
-    name: 'Hotel Booking Project',
-    desc: 'A complicated project that enhanced my skills a lot',
-    stack: 'React JS',
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: 'https://github.com/Almarex-Web-Dev/React-booking-project',
-    },
-    website: {
-      icon: <TbWorld />,
-      url: 'https://react-booking-project.netlify.app/',
-    },
-    imgUrl:
-      'https://cdn.dribbble.com/userupload/2512424/file/original-03f9f265f9a4adbd54644841930518a1.png?compress=1&resize=320x240&vertical=top',
-  },
+  // {
+  //   id: 4,
+  //   name: 'Hotel Booking Project',
+  //   desc: 'A complicated project that enhanced my skills a lot',
+  //   stack: 'React JS',
+  //   gitHubUrl: {
+  //     icon: <GrGithub />,
+  //     url: 'https://github.com/Almarex-Web-Dev/React-booking-project',
+  //   },
+  //   website: {
+  //     icon: <TbWorld />,
+  //     url: 'https://react-booking-project.netlify.app/',
+  //   },
+  //   imgUrl:
+  //     'https://cdn.dribbble.com/userupload/2512424/file/original-03f9f265f9a4adbd54644841930518a1.png?compress=1&resize=320x240&vertical=top',
+  // },
 
-  {
-    id: 5,
-    name: 'Rest Country API',
-    desc: 'A project that displays all information about a country',
-    stack: 'React JS',
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: 'https://github.com/Almarex-Web-Dev/rest-countries-api-project',
-    },
-    website: {
-      icon: <TbWorld />,
-      url: 'https://rest-countries-web-app-project.netlify.app/',
-    },
-    imgUrl: restCOuntry,
-  },
+  // {
+  //   id: 5,
+  //   name: 'Rest Country API',
+  //   desc: 'A project that displays all information about a country',
+  //   stack: 'React JS',
+  //   gitHubUrl: {
+  //     icon: <GrGithub />,
+  //     url: 'https://github.com/Almarex-Web-Dev/rest-countries-api-project',
+  //   },
+  //   website: {
+  //     icon: <TbWorld />,
+  //     url: 'https://rest-countries-web-app-project.netlify.app/',
+  //   },
+  //   imgUrl: restCOuntry,
+  // },
   {
     id: 6,
     name: 'Huddle Landing Page',
@@ -122,19 +123,5 @@ export const projects = [
     imgUrl:
       'https://cdn.dribbble.com/userupload/2512424/file/original-03f9f265f9a4adbd54644841930518a1.png?compress=1&resize=320x240&vertical=top',
   },
-  {
-    id: 2,
-    name: 'Restaurant Website',
-    desc: 'A Responsive restaurant website design with great UI Effect',
-    stack: 'React JS',
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: 'https://github.com/Almarex-Web-Dev/Restaurant-Website-project',
-    },
-    website: {
-      icon: <TbWorld />,
-      url: 'https://gericht-restaurant-website.netlify.app/',
-    },
-    imgUrl: gericht,
-  },
+  
 ]
