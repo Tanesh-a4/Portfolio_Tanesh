@@ -9,6 +9,7 @@ import {
   gericht,
   huddle,
   restCOuntry,
+  stress,
 } from '../../assets/images'
 
 // projects' id, name, stacks, icon and url data
@@ -24,28 +25,13 @@ export const projects = [
       url: 'https://github.com/Tanesh-a4/Elearning_22',
     },
     website: {
-      icon: <TbWorld />,
+      icon: <TbWorld />,  
       url: 'https://quiklearn-career.vercel.app/',
     },
     imgUrl: quiklearn,
   },
-  {
+    {
     id: 2,
-    name: 'Portfolio Website',
-    desc: 'A Responsive portfolio website design with great UI Effect',
-    stack: 'React JS',
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: 'https://github.com/Tanesh-a4/Portfolio_Tanesh',
-    },
-    website: {
-      icon: <TbWorld />,
-      url: 'https://portfolio-tanesh.vercel.app/',
-    },
-    imgUrl: gericht,
-  },
-  {
-    id: 3,
     name: 'Bubble Aura ',
     desc: 'This is an aamazing game that you can play with your friend ',
     stack: 'HTML CSS JS',
@@ -60,6 +46,22 @@ export const projects = [
       url: 'https://bubbleaure.vercel.app/',
     },
   },
+  {
+    id: 3,
+    name: 'Portfolio Website',
+    desc: 'A Responsive portfolio website design with great UI Effect',
+    stack: 'React JS',
+    gitHubUrl: {
+      icon: <GrGithub />,
+      url: 'https://github.com/Tanesh-a4/Portfolio_Tanesh',
+    },
+    website: {
+      icon: <TbWorld />,
+      url: 'https://portfolio-tanesh.vercel.app/',
+    },
+    imgUrl: gericht,
+  },
+
   // {
   //   id: 4,
   //   name: 'Hotel Booking Project',
@@ -78,7 +80,7 @@ export const projects = [
   // },
 
   // {
-  //   id: 5,
+  //   id: 5,6
   //   name: 'Rest Country API',
   //   desc: 'A project that displays all information about a country',
   //   stack: 'React JS',
@@ -92,36 +94,35 @@ export const projects = [
   //   },
   //   imgUrl: restCOuntry,
   // },
-  {
-    id: 6,
-    name: 'Huddle Landing Page',
-    desc: 'A simple landing page website',
-    stack: 'React js, SCSS',
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: 'https://github.com/Almarex-Web-Dev/Huddle-landing-page',
-    },
-    website: {
-      icon: <TbWorld />,
-      url: 'https://huddle-website-project.netlify.app/',
-    },
-    imgUrl: huddle,
-  },
+  // {
+  //   id: 6,
+  //   name: 'Huddle Landing Page',
+  //   desc: 'A simple landing page website',
+  //   stack: 'React js, SCSS',
+  //   gitHubUrl: {
+  //     icon: <GrGithub />,
+  //     url: 'https://github.com/Almarex-Web-Dev/Huddle-landing-page',
+  //   },
+  //   website: {
+  //     icon: <TbWorld />,
+  //     url: 'https://huddle-website-project.netlify.app/',
+  //   },
+  //   imgUrl: huddle,
+  // },
   {
     id: 4,
-    name: 'Hotel Booking Project',
-    desc: 'A complicated project that enhanced my skills a lot',
-    stack: 'React JS',
+    name: 'EEG Based Stress Detection',
+    desc: 'A project that detects stress level using EEG signals',
+    stack: 'React JS,Python',
     gitHubUrl: {
       icon: <GrGithub />,
-      url: 'https://github.com/Almarex-Web-Dev/React-booking-project',
+      url: 'https://github.com/Tanesh-a4/bci_project-client',
     },
     website: {
       icon: <TbWorld />,
-      url: 'https://react-booking-project.netlify.app/',
+      url: 'https://stress-detector-five.vercel.app/',
     },
-    imgUrl:
-      'https://cdn.dribbble.com/userupload/2512424/file/original-03f9f265f9a4adbd54644841930518a1.png?compress=1&resize=320x240&vertical=top',
+    imgUrl:stress,
   },
   
 ]

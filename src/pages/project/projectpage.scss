@@ -12,6 +12,22 @@
       }
     }
   }
+ .project-image-wrapper {
+  width: 100%;
+  height: 200px; // control the height here
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: #f9f9f9; // optional
+}
+
+  .project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; // ensures whole image fits inside
+  }
+
   .section__projects-description {
     width: 100%;
     max-width: 600px;

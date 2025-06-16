@@ -1,7 +1,7 @@
 import React from 'react'
 
 // react-icons
-import { FiGrid, FiLinkedin, FiYoutube, FiFigma } from 'react-icons/fi'
+import { FiGrid, FiLinkedin, FiYoutube, FiFigma ,FiMail } from 'react-icons/fi'
 import { ImBlogger } from 'react-icons/im'
 import { VscProject } from 'react-icons/vsc'
 import {
@@ -57,14 +57,21 @@ const sideBarMenu = [
 const socialIcons = [
   {
     icon: <GrGithub className="icon switch__color" />,
-    url: 'https://github.com/Almarex-Web-Dev ',
+    url: 'https://github.com/Tanesh-a4 ',
+  },
+  
+  {
+    icon: <FiLinkedin className="icon switch__color" />,
+    url: 'https://www.linkedin.com/in/tanesh-ashan-011087260/',
+  },
+   {
+    icon: <FiMail className="icon switch__color" />,
+    url: 'mailto:your-email@example.com',
   },
   {
     icon: <FiYoutube className="icon switch__color" />,
-    url: 'https://www.youtube.com/c/AlmarexWebDev',
+    url: 'https://www.youtube.com/@taneshashan4181',
   },
-  
-  
 ]
 // skills card
 const skillSet = [
