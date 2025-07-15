@@ -264,7 +264,8 @@ const Contact = () => {
   };
 
   return (
-    <section className="section__contact section__padding">
+    <section className="contact-page-wrapper">
+      <section className="section__contact section__padding">
       <div className="fake-big">Contact</div>
       
       {/* Page Header */}
@@ -375,9 +376,8 @@ const Contact = () => {
                 ref={formRef} 
                 className="contact__form" 
                 onSubmit={handleSubmit}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                action="https://formspree.io/f/mnnvvlyj"
+                method="POST"
               >
                 <div className="form__grid">
                   <motion.div 
@@ -673,6 +673,7 @@ const Contact = () => {
           </motion.div>
         </motion.div>
       </div>
+    </section>
     </section>
   );
 };

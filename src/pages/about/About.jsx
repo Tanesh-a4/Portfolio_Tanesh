@@ -23,20 +23,12 @@ const About = () => {
       <div className="section-about-wrapper section__padding">
         <article className="section-about-description">
           <div>
-            <h2 arial-aria-label="About and skills">
+            <h2 aria-label="About me">
               <Blast
                 letterClass={letterClass}
                 arrayStr={[
-                  'A',
-                  'b',
-                  'o',
-                  'u',
-                  't',
-                  '',
                   'M',
-                  'e',
-                  ' ',
-                  '&',
+                  'y',
                   '',
                   'S',
                   'k',
@@ -79,6 +71,7 @@ const About = () => {
             </Fade>
           </div>
         </article>
+        
         {/* programming language cards */}
         <Cards />
       </div>

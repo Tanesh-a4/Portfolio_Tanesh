@@ -8,6 +8,21 @@ const Project = (prop) => {
   
   // Parse stack string into array if it's not already
   const techStack = typeof stack === 'string' ? stack.split(',').map(item => item.trim()) : stack;
+
+  // Helper function to get URL safely
+  const getUrl = (urlObj) => {
+    if (!urlObj) return "#";
+    if (typeof urlObj === 'string') return urlObj;
+    return urlObj.url || "#";
+  };
+  
+  // Helper function to check if URL is valid
+  const isValidUrl = (url) => {
+    return url && url !== "#";
+  };
+
+  const githubUrl = getUrl(gitHubUrl);
+  const liveUrl = getUrl(website);
   
   return (
     <Fade bottom>
@@ -36,27 +51,33 @@ const Project = (prop) => {
             </div>
             
             <div className="section__projects-icon">
-              <a 
-                href={gitHubUrl.url} 
-                className="switch__color" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="View GitHub Repository"
-              >
-                {gitHubUrl.icon || <FiGithub />}
-                <span>Code</span>
-              </a>
+              {isValidUrl(githubUrl) && (
+                <a 
+                  href={githubUrl} 
+                  className="switch__color" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="View GitHub Repository"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {gitHubUrl && typeof gitHubUrl === 'object' && gitHubUrl.icon ? gitHubUrl.icon : <FiGithub />}
+                  <span>Code</span>
+                </a>
+              )}
               
-              <a 
-                href={website.url} 
-                className="switch__color" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                aria-label="Visit Live Website"
-              >
-                {website.icon || <FiExternalLink />}
-                <span>Live</span>
-              </a>
+              {isValidUrl(liveUrl) && (
+                <a 
+                  href={liveUrl} 
+                  className="switch__color" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  aria-label="Visit Live Website"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  {website && typeof website === 'object' && website.icon ? website.icon : <FiExternalLink />}
+                  <span>Live</span>
+                </a>
+              )}
             </div>
           </div>
         </div>         
