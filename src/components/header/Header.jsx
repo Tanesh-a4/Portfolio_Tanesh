@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import './header.scss'
 import Blast from '../BlastAnimation/Blast'
 import Logo from '../logoAnimation/Logo'
+import Experience from '../experience/Experience';
 
 const firstletterArray=["T"]
 const nameArray =["n","e","s","h"]
@@ -21,6 +22,7 @@ const Header = () => {
     })
 
         return (
+            <>
             <section className='section-1 header__container section__padding'>
                 <main className='intro-page '>
                     <h1>
@@ -64,6 +66,10 @@ const Header = () => {
                     <Logo/>
                 </main>
             </section>
+            
+            {/* Add the Experience section */}
+            {/* <Experience /> */}
+            </>
         )
         }
 
