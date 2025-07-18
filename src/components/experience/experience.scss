@@ -39,7 +39,7 @@
   margin-bottom: 4rem;
   
   .section-title {
-    font-size: 4rem; // Increased size
+    font-size: 3.7rem; // Increased size
     font-weight: 700;
     margin: 0 auto 1rem;
     text-align: center;
@@ -683,3 +683,70 @@
     transform: scale(1.1);
   }
 }
+// Responsive styles for section header and title
+@media screen and (max-width: 1200px) {
+  .section-header {
+    .section-title {
+      font-size: 3.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .section-header {
+    margin-bottom: 3rem;
+    
+    .section-title {
+      font-size: 3rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-header {
+    .section-title {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .section-header {
+    margin-bottom: 2.5rem;
+    
+    .section-title {
+      font-size: 2rem;
+      flex-wrap: wrap; // Allow Blast characters to wrap if needed
+      
+      // Adjust Blast characters for smaller screens
+      span {
+        display: inline-block;
+        line-height: 1.2;
+      }
+    }
+    
+    .section-subtitle {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .animate-line {
+      width: 60px;
+      height: 3px;
+    }
+  }
+}
+
+// Extra small devices
+@media screen and (max-width: 375px) {
+  .section-header {
+    .section-title {
+      font-size: 1.75rem;
+    }
+  }
+}
+
