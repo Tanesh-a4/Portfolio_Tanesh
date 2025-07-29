@@ -9,10 +9,10 @@ const Home = () => {
     <>
     <Header/>
     <section className='section-experinece'>
-       <Experience/> {/* Added Experience section here */}
+        <Experience/> {/* Added Experience section here */}
     </section>
     <section className="section-about">
-    <About/>
+        <About/>
     </section>
     
     <section className='section-project'>
