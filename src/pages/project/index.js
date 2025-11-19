@@ -10,6 +10,8 @@ import {
   huddle,
   restCOuntry,
   stress,
+  generate,
+  Journal,
 } from '../../assets/images'
 
 // projects' id, name, stacks, icon and url data
@@ -30,8 +32,40 @@ export const projects = [
     },
     imgUrl: quiklearn,
   },
+   {
+  id: 2,
+  name: 'Generate Awesome',
+  desc: 'An AI-powered content generator built using LangChain and Next.js. It creates polished, ready-to-use README files and project descriptions effortlessly.',
+  stack: 'Next.js, LangChain, OpenAI',
+  gitHubUrl: {
+    icon: <GrGithub />,
+    url: 'https://github.com/Tanesh-a4/generate-awesome',
+  },
+  website: {
+    icon: <TbWorld />,
+    url: 'https://generate-awesome.vercel.app/',
+  },
+  imgUrl:
+    generate,
+},
+{
+  id: 3,
+  name: 'Journal App',
+  desc: 'A beautifully minimal journaling app built with Next.js, designed for fast, distraction-free writing and seamless cloud access.',
+  stack: 'Next.js',
+  gitHubUrl: {
+    icon: <GrGithub />,
+    url: 'https://github.com/Tanesh-a4/journal',
+  },
+  website: {
+    icon: <TbWorld />,
+    url: 'https://journal-ten-gold.vercel.app/',
+  },
+  imgUrl:
+    Journal,
+},
     {
-    id: 2,
+    id: 4,
     name: 'Bubble Aura ',
     desc: 'This is an aamazing game that you can play with your friend ',
     stack: 'HTML CSS JS',
@@ -47,7 +81,22 @@ export const projects = [
     },
   },
   {
-    id: 3,
+    id: 5,
+    name: 'EEG Based Stress Detection',
+    desc: 'A project that detects stress level using EEG signals',
+    stack: 'React JS,Python',
+    gitHubUrl: {
+      icon: <GrGithub />,
+      url: 'https://github.com/Tanesh-a4/bci_project-client',
+    },
+    website: {
+      icon: <TbWorld />,
+      url: 'https://stress-detector-five.vercel.app/',
+    },
+    imgUrl:stress,
+  },
+  {
+    id: 6,
     name: 'Portfolio Website',
     desc: 'A Responsive portfolio website design with great UI Effect',
     stack: 'React JS',
@@ -62,22 +111,8 @@ export const projects = [
     imgUrl: gericht,
   },
 
-  // {
-  //   id: 4,
-  //   name: 'Hotel Booking Project',
-  //   desc: 'A complicated project that enhanced my skills a lot',
-  //   stack: 'React JS',
-  //   gitHubUrl: {
-  //     icon: <GrGithub />,
-  //     url: 'https://github.com/Almarex-Web-Dev/React-booking-project',
-  //   },
-  //   website: {
-  //     icon: <TbWorld />,
-  //     url: 'https://react-booking-project.netlify.app/',
-  //   },
-  //   imgUrl:
-  //     'https://cdn.dribbble.com/userupload/2512424/file/original-03f9f265f9a4adbd54644841930518a1.png?compress=1&resize=320x240&vertical=top',
-  // },
+
+
 
   // {
   //   id: 5,6
@@ -109,20 +144,6 @@ export const projects = [
   //   },
   //   imgUrl: huddle,
   // },
-  {
-    id: 4,
-    name: 'EEG Based Stress Detection',
-    desc: 'A project that detects stress level using EEG signals',
-    stack: 'React JS,Python',
-    gitHubUrl: {
-      icon: <GrGithub />,
-      url: 'https://github.com/Tanesh-a4/bci_project-client',
-    },
-    website: {
-      icon: <TbWorld />,
-      url: 'https://stress-detector-five.vercel.app/',
-    },
-    imgUrl:stress,
-  },
+  
   
 ]

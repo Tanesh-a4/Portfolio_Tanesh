@@ -106,7 +106,7 @@ const Header = () => {
                     </svg>
                     <Blast letterClass={letterClass} arrayStr={nameArray} indexLetter={15} /><br/>
                     <Blast letterClass={letterClass} arrayStr={jobArray} indexLetter={22}  />
-                </h1>
+                </h1> 
                 <p className="text-desc">
                     WEB DEVELOPER/UI/UX DESIGNER
                 </p>
