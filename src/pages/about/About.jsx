@@ -1,5 +1,6 @@
 import React from 'react'
-import Latest_Tanesh_resume from '../../assets/Latest_Tanesh_resume.pdf'
+// import Latest_Tanesh_resume from '../../assets/Latest_Tanesh_resume.pdf'
+import Latest_Tanesh_resume from '../../assets/Resume_updated_0524.pdf'
 import Latest_Tanesh_resume2 from '../../assets/latest_resume.pdf'
 import Reveal from 'react-reveal/Reveal'
 import Fade from 'react-reveal/Fade'
@@ -59,7 +60,7 @@ const About = () => {
             <Fade left>
               <a
                 style={{ marginTop: '2rem' }}
-                href={Latest_Tanesh_resume2}
+                href={Latest_Tanesh_resume}
                 download
                 className="contact-button submit-button"
               >
