@@ -7,6 +7,8 @@ import Blast from '../BlastAnimation/Blast';
 // Import company logos
 import boschLogo from './bosch_logo1.png';
 import ai4bLogo from './ai4b-logo.png';
+import bizomLogo from './image.png';
+import iiitsLogo from './iiiitsLogo.png';
 
 const Experience = () => {
   const [letterClass, setLetterClass] = React.useState('text-animate')
@@ -41,7 +43,27 @@ const Experience = () => {
   };
 
   const experienceData = [
-  {
+ {
+  company: "BIZOM",
+  role: "Software Engineer Trainee",
+  duration: "March 2026 – Present",
+  location: "Bangalore, India",
+  description:
+    "Developing and optimizing scalable backend and frontend solutions using PHP, React, and MySQL. Worked on query optimization, improving application performance, fixing production issues, and collaborating with cross-functional teams to enhance enterprise SaaS workflows and system reliability.",
+  skills: ["PHP", "React", "MySQL", "JavaScript", "Bitbucket", "Docker"],
+  color: "#d72626",
+  logo: bizomLogo
+}, {
+  company: "IIIIT SRI CITY",
+  role: "Research Intern – Solar AI Project",
+  duration: "March 2025 – July 2025",
+  location: "Sri City, Andhra Pradesh",
+  description:
+    "Worked as a Research Intern on the consultancy project 'Solar AI', contributing to AI-driven research and development activities. Collaborated on project tasks, demonstrated strong technical and analytical skills, and received highly satisfactory performance recognition from the Principal Investigator.",
+  skills: ["Python", "AI Research", "Machine Learning", "Data Analysis"],
+  color: "#F28C28",
+  logo: iiitsLogo
+},  {
     company: "AI4Bharat, IIT Madras",
     role: "Software Developer",
     duration: "June 2025 – Present",

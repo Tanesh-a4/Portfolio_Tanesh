@@ -6,7 +6,7 @@ const AppProvider = ({children}) =>
 {
     const [colorTheme, setColorTheme] = useState('dark-mode') 
     const [isTemplateOpen, setIsTemplateOpen] = useState(false)
-    const [changeTemp, setChangeTemp] = useState('template-1')
+    const [changeTemp, setChangeTemp] = useState('template-3')
     
     useEffect(() => {
         const currentTheme = localStorage.getItem('theme')
@@ -21,7 +21,7 @@ const AppProvider = ({children}) =>
       }
       useEffect(() => {
           const currentTheme = localStorage.getItem('temp')
-          setChangeTemp(currentTheme)
+          if (currentTheme) setChangeTemp(currentTheme)
         }, [])
       
     

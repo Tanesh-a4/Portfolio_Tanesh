@@ -2,6 +2,7 @@ import React from 'react'
 
 // react-icons
 import { FiGrid, FiLinkedin, FiYoutube, FiFigma ,FiMail } from 'react-icons/fi'
+import { FaPhp, FaBitbucket } from 'react-icons/fa'
 import { ImBlogger } from 'react-icons/im'
 import { VscProject } from 'react-icons/vsc'
 import {
@@ -82,9 +83,14 @@ const skillSet = [
       'https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/React_getting_started',
   },
   {
-    icon: <SiDjango className="skills-icon switch__color" />, // Django Icon
+    icon: <SiDjango className="skills-icon switch__color" />,
     spanText: 'Django',
-    url: 'https://www.djangoproject.com/start/', // Django Documentation Link
+    url: 'https://www.djangoproject.com/start/',
+  },
+  {
+    icon: <FaPhp className="skills-icon switch__color" />,
+    spanText: 'PHP',
+    url: 'https://www.php.net/docs.php',
   },
   {
     icon: <AiFillHtml5 className="skills-icon switch__color" />,
@@ -101,12 +107,10 @@ const skillSet = [
     spanText: 'JAVASCRIPT',
     url: 'https://developer.mozilla.org/en-US/docs/Learn/JavaScript',
   },
-
-
   {
     icon: <BsBootstrapFill className="skills-icon switch__color" />,
     spanText: 'BOOTSTRAP',
-    url: '',
+    url: 'https://getbootstrap.com/',
   },
   {
     icon: <FaGit className="skills-icon switch__color" />,
@@ -120,19 +124,21 @@ const skillSet = [
     url:
       'https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/GitHub',
   },
-  
-
+  {
+    icon: <FaBitbucket className="skills-icon switch__color" />,
+    spanText: 'BITBUCKET',
+    url: 'https://bitbucket.org/product/',
+  },
   {
     icon: <FaNodeJs className="skills-icon switch__color" />,
-    spanText: 'NODE',
+    spanText: 'NODE JS',
     url:
       'https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs',
   },
-
   {
     icon: <DiMongodb className="skills-icon switch__color" />,
     spanText: 'MONGO DB',
-    url: '',
+    url: 'https://www.mongodb.com/docs/',
   },
   {
     icon: <SiExpress className="skills-icon switch__color" />,
@@ -144,12 +150,6 @@ const skillSet = [
     icon: <SiRedux className="skills-icon switch__color" />,
     spanText: 'Redux',
     url: 'https://redux.js.org/introduction/getting-started',
-  },
-  
-  {
-    icon: <BsGoogle className="skills-icon switch__color" />,
-    spanText: 'Googling',
-    url: 'https://google.com',
   },
 ]
 
