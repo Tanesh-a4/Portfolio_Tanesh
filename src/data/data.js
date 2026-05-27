@@ -1,31 +1,26 @@
 import React from 'react'
 
 // react-icons
-import { FiGrid, FiLinkedin, FiYoutube, FiFigma ,FiMail } from 'react-icons/fi'
+import { FiGrid, FiLinkedin, FiYoutube, FiMail } from 'react-icons/fi'
 import { FaPhp, FaBitbucket } from 'react-icons/fa'
-import { ImBlogger } from 'react-icons/im'
 import { VscProject } from 'react-icons/vsc'
 import {
   BsBootstrapFill,
   BsPersonLinesFill,
   BsGithub,
-  BsGoogle,
 } from 'react-icons/bs'
 import { SiDjango } from 'react-icons/si';
 
 import { RiContactsLine, RiReactjsLine } from 'react-icons/ri'
 import {
-  SiFuturelearn,
-  SiSass,
-  SiJquery,
   SiExpress,
   SiRedux,
 } from 'react-icons/si'
 
-import { GrGithub, GrTwitter, GrInstagram } from 'react-icons/gr'
+import { GrGithub } from 'react-icons/gr'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { DiCss3, DiMongodb } from 'react-icons/di'
-import { IoLogoJavascript, IoLogoGameControllerB } from 'react-icons/io'
+import { IoLogoJavascript } from 'react-icons/io'
 import { FaNodeJs, FaGit } from 'react-icons/fa'
 
 // sidebar menu functionality

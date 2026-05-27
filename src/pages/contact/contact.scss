@@ -1,3 +1,4 @@
+@use "sass:math";
 .contact-page-wrapper{
 
   /* Contact Page - Light Modern Theme with Enhanced Animations */
@@ -92,7 +93,7 @@
 
 @for $i from 1 through 35 {
   .text-animate._#{$i} {
-    animation-delay: #{$i / 10}s;
+    animation-delay: #{math.div($i, 10)}s;
   }
 }
 

@@ -3,9 +3,7 @@ import {Link} from 'react-router-dom'
 import './header.scss'
 import Blast from '../BlastAnimation/Blast'
 import Logo from '../logoAnimation/Logo'
-import Experience from '../experience/Experience';
 
-const firstletterArray=["T"]
 const nameArray =["a","n","e","s","h"]
 const jobArray =["W","e","b","  "," ","D","e","v","e","l","o","p","e","r"]
 

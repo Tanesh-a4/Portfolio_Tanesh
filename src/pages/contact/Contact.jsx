@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import Fade from "react-reveal/Fade";
-import Zoom from "react-reveal/Zoom";
 import { Blast } from "../../components";
 import { motion } from "framer-motion";
 import { FiSend, FiPhone, FiMap, FiMail, FiChevronRight } from "react-icons/fi";
@@ -112,7 +110,6 @@ const Contact = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [activeField, setActiveField] = useState(null);
-  const [skillsHovered, setSkillsHovered] = useState(false);
   const formRef = useRef(null);
   const skillsSectionRef = useRef(null);
   
@@ -246,19 +243,6 @@ const Contact = () => {
       transition: {
         duration: 0.5,
         ease: "easeOut"
-      }
-    }
-  };
-
-  const floatVariants = {
-    initial: { y: 0 },
-    float: { 
-      y: [0, -15, 0], 
-      transition: { 
-        repeat: Infinity, 
-        repeatType: "mirror", 
-        duration: 3,
-        ease: "easeInOut"
       }
     }
   };
@@ -597,8 +581,6 @@ const Contact = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.5 }}
-            onHoverStart={() => setSkillsHovered(true)}
-            onHoverEnd={() => setSkillsHovered(false)}
             variants={cardVariants}
           >
             <motion.h3

@@ -3,12 +3,9 @@ import { TbWorld } from 'react-icons/tb'
 
 // images from the asset folder in the image file
 import {
-  wordleClone,
   quiklearn,
   gpt3,
   gericht,
-  huddle,
-  restCOuntry,
   stress,
   generate,
   Journal,

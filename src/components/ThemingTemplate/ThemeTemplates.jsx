@@ -4,7 +4,7 @@ import { useGLobalContext } from '../../hooks/contextAPI'
 import { FiSettings } from 'react-icons/fi'
 import { BsMoonStars, BsFillSunFill, BsXLg } from 'react-icons/bs'
 const ThemeTemplates = () => {
-    const {changeTemp,setChangeTemp,handleTemp,isTemplateOpen,setIsTemplate,closeTemplate,openTemplate,colorTheme,handleTheme,} = useGLobalContext()
+  const {changeTemp,handleTemp,isTemplateOpen,closeTemplate,openTemplate,colorTheme,handleTheme,} = useGLobalContext()
     // console.log(useGLobalContext())
   return (
     <>
